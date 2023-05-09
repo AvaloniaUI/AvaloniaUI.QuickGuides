@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace ImageExample;
+namespace GoogleFontExample;
 
 class Program
 {
@@ -16,6 +16,5 @@ class Program
     public static AppBuilder BuildAvaloniaApp()
         => AppBuilder.Configure<App>()
             .UsePlatformDetect()
-            .WithInterFont()
             .LogToTrace();
 }
