@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:BindingConvertersExample.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:converters="clr-namespace:BindingConvertersExample.Converters"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="BindingConvertersExample.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="BindingConvertersExample">
+    <Window.Resources>
+        <converters:BirthdateToAgeConverter x:Key="BirthdateToAgeConverter"/>
+        <converters:AgeToPluralConverter x:Key="AgeToPluralConverter"/>
+    </Window.Resources>
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Panel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <StackPanel Spacing="10">
+            <TextBlock FontWeight="Bold">Enter your date of birth here.</TextBlock>
+            <DatePicker SelectedDate="{Binding Age, Converter={StaticResource BirthdateToAgeConverter}, Mode=OneWayToSource}"/>
+            <TextBlock>
+                <Run>Your age is </Run>
+                <Run Text="{Binding Age}"/>
+                <Run>year</Run><Run Text="{Binding Age, Converter={StaticResource AgeToPluralConverter}, Mode=OneWay}"/>
+                <Run>old today.</Run>
+            </TextBlock>
+        </StackPanel>
+    </Panel>
+
+</Window>
