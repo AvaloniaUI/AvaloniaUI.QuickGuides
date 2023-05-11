@@ -14,13 +14,23 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel />
     </Design.DataContext>
-
     <DockPanel LastChildFill="True">
         <DockPanel DockPanel.Dock="Bottom">
-            <Button DockPanel.Dock="Left" Command="{Binding AddRandomNumberToList}">Add Random Number</Button>
-            <Button DockPanel.Dock="Right" Command="{Binding DeleteRandomNumberToList}">Delete Random Number</Button>
+            <Button DockPanel.Dock="Left" Command="{Binding AddRandomNumberToListCommand}">Add Random Number</Button>
+            <Button DockPanel.Dock="Right" Command="{Binding DeleteRandomNumberToListCommand}">Delete Random Number</Button>
         </DockPanel>
-        <ListBox ItemsSource="{Binding Numbers}" />
+        <Grid ColumnDefinitions="*,*">
+            <ListBox ItemsSource="{Binding Numbers}" />
+            <ListBox Grid.Column="1" ItemsSource="{Binding Numbers}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate DataType="x:String">
+                        <TextBlock>
+                            <Run FontWeight="Bold">Templated Number</Run>:<Run Text="{Binding .}"/>
+                        </TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
     </DockPanel>
 
 </Window>

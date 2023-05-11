@@ -30,7 +30,7 @@ public partial class MainWindowViewModel : ViewModelBase
             var file = await _service.OpenFile();
             if (file is null) return;
 
-            // Limit the text file to 1MB so that the demo wont lag.
+            // Limit the text file to 1MB so that the demo won't lag.
             if ((await file.GetBasicPropertiesAsync()).Size <= 1024 * 1024 * 1)
             {
                 await using var readStream = await file.OpenReadAsync();
@@ -57,7 +57,7 @@ public partial class MainWindowViewModel : ViewModelBase
             var file = await _service.SaveFile();
             if (file is null) return;
 
-            // Limit the text file to 1MB so that the demo wont lag.
+            // Limit the text file to 1MB so that the demo won't lag.
             if (FileText?.Length <= 1024 * 1024 * 1)
             {
                 var stream = new MemoryStream(Encoding.Default.GetBytes(FileText));
