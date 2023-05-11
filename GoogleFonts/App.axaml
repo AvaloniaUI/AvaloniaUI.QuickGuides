@@ -1,11 +1,11 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="GoogleFontExample.App"
+             x:Class="GoogleFonts.App"
              RequestedThemeVariant="Default">
     <Application.Styles>
         <FluentTheme />
     </Application.Styles>
     <Application.Resources>
-        <FontFamily x:Key="NunitoFont">avares://GoogleFontExample/Assets/Fonts#Nunito</FontFamily>
+        <FontFamily x:Key="NunitoFont">avares://GoogleFonts/Assets/Fonts#Nunito</FontFamily>
     </Application.Resources>
 </Application>

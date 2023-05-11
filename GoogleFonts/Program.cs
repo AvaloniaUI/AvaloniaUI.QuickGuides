@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace GoogleFontExample;
+namespace GoogleFonts;
 
 class Program
 {

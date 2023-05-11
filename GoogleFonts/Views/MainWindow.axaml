@@ -1,22 +1,21 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:ImageExample.ViewModels"
+        xmlns:vm="using:GoogleFonts.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="ImageExample.Views.MainWindow"
+        x:Class="GoogleFonts.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Title="ImageExample">
+        Icon="/Assets/avalonia-logo.ico"
+        Title="GoogleFonts">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel />
+        <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <Grid ColumnDefinitions="*,*,*">
-        <Image Grid.Column="0" Source="avares://ImageExample/Assets/abstract.jpg" MaxWidth="300" />
-        <Image Grid.Column="1" Source="{Binding ImageFromBinding}" MaxWidth="300" />
-        <Image Grid.Column="2" Source="{Binding ImageFromWebsite^}" MaxWidth="300" />
-    </Grid>
+    <TextBlock Text="{Binding Greeting}" FontSize="70" FontFamily="{StaticResource NunitoFont}" 
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
 </Window>

@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageExample", "ImageExample\ImageExample.csproj", "{1829A943-9C42-4F3F-B189-5C378F0FB8C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingImages", "LoadingImages\LoadingImages.csproj", "{1829A943-9C42-4F3F-B189-5C378F0FB8C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleFontExample", "GoogleFontExample\GoogleFontExample.csproj", "{C089C4DB-60EE-4079-88E8-E4E92F156FDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleFonts", "GoogleFonts\GoogleFonts.csproj", "{C089C4DB-60EE-4079-88E8-E4E92F156FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataListExample", "DataListExample\DataListExample.csproj", "{5FA54F40-2388-42C6-AAF4-303E046CAC3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakingLists", "MakingLists\MakingLists.csproj", "{5FA54F40-2388-42C6-AAF4-303E046CAC3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingConvertersExample", "BindingConvertersExample\BindingConvertersExample.csproj", "{6622FB60-2ABB-486D-AE0F-74ADE325248C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingsAndConverters", "BindingsAndConverters\BindingsAndConverters.csproj", "{6622FB60-2ABB-486D-AE0F-74ADE325248C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOpsExample", "FileOpsExample\FileOpsExample.csproj", "{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOps", "FileOps\FileOps.csproj", "{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

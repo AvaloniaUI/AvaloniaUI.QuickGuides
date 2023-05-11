@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace GoogleFontExample.Views;
+namespace GoogleFonts.Views;
 
 public partial class MainWindow : Window
 {

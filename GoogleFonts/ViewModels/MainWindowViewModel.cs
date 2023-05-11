@@ -1,4 +1,4 @@
-﻿namespace GoogleFontExample.ViewModels;
+﻿namespace GoogleFonts.ViewModels;
 
 public class MainWindowViewModel : ViewModelBase
 {

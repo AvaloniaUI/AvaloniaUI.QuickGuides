@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace GoogleFontExample.ViewModels;
+namespace GoogleFonts.ViewModels;
 
 public class ViewModelBase : ObservableObject
 {

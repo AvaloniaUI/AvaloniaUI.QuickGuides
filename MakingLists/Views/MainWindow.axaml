@@ -7,7 +7,7 @@
         x:Class="DataListExample.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="DataListExample">
+        Title="MakingLists">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,

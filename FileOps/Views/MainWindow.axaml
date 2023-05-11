@@ -7,7 +7,7 @@
         x:Class="FileOpsExample.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="FileOpsExample">
+        Title="FileOps">
     <DockPanel LastChildFill="True">
         <DockPanel DockPanel.Dock="Bottom">
             <Button DockPanel.Dock="Left" Command="{Binding OpenFileCommand}">Open File</Button>

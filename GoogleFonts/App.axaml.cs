@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using GoogleFontExample.ViewModels;
-using GoogleFontExample.Views;
+using GoogleFonts.ViewModels;
+using GoogleFonts.Views;
 
-namespace GoogleFontExample;
+namespace GoogleFonts;
 
 public partial class App : Application
 {

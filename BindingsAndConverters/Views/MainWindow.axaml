@@ -8,7 +8,7 @@
         x:Class="BindingConvertersExample.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="BindingConvertersExample">
+        Title="BindingsAndConverters">
     <Window.Resources>
         <converters:BirthdateToAgeConverter x:Key="BirthdateToAgeConverter"/>
         <converters:AgeToPluralConverter x:Key="AgeToPluralConverter"/>
