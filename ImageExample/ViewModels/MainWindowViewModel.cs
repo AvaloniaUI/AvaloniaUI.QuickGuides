@@ -1,8 +1,5 @@
-﻿using System;
-using System.Threading.Tasks;
-using Avalonia;
+﻿using System.Threading.Tasks;
 using Avalonia.Media.Imaging;
-using Avalonia.Platform;
 using ImageExample.Helpers;
 
 namespace ImageExample.ViewModels;

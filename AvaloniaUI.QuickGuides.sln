@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataListExample", "DataList
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingConvertersExample", "BindingConvertersExample\BindingConvertersExample.csproj", "{6622FB60-2ABB-486D-AE0F-74ADE325248C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOpsExample", "FileOpsExample\FileOpsExample.csproj", "{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{6622FB60-2ABB-486D-AE0F-74ADE325248C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6622FB60-2ABB-486D-AE0F-74ADE325248C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6622FB60-2ABB-486D-AE0F-74ADE325248C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
