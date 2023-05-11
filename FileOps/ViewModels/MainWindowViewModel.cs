@@ -3,23 +3,18 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Avalonia;
+using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Platform.Storage;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using FileOpsExample.Services;
 
-namespace FileOpsExample.ViewModels;
+namespace FileOps.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
     [ObservableProperty] private string? _fileUri;
     [ObservableProperty] private string? _fileText;
-
-    private readonly IApplicationService _service;
-
-    public MainWindowViewModel(IApplicationService applicationService)
-    {
-        _service = applicationService;
-    }
 
     [RelayCommand]
     private async Task OpenFile(CancellationToken token)
@@ -27,7 +22,7 @@ public partial class MainWindowViewModel : ViewModelBase
         ErrorMessages?.Clear();
         try
         {
-            var file = await _service.OpenFile();
+            var file = await DoOpenFilePicker();
             if (file is null) return;
 
             // Limit the text file to 1MB so that the demo won't lag.
@@ -54,13 +49,13 @@ public partial class MainWindowViewModel : ViewModelBase
         ErrorMessages?.Clear();
         try
         {
-            var file = await _service.SaveFile();
+            var file = await DoSaveFilePicker();
             if (file is null) return;
 
             // Limit the text file to 1MB so that the demo won't lag.
             if (FileText?.Length <= 1024 * 1024 * 1)
             {
-                var stream = new MemoryStream(Encoding.Default.GetBytes(FileText));
+                var stream = new MemoryStream(Encoding.Default.GetBytes((string)FileText));
                 await using var writeStream = await file.OpenWriteAsync();
                 await stream.CopyToAsync(writeStream);
             }
@@ -73,5 +68,46 @@ public partial class MainWindowViewModel : ViewModelBase
         {
             ErrorMessages?.Add(e.Message);
         }
+    }
+
+    private async Task<IStorageFile?> DoOpenFilePicker()
+    {
+        // For learning purposes, we opted to directly get the reference
+        // for StorageProvider APIs here inside the ViewModel. 
+
+        // For your real-world apps, you should follow the MVVM principles
+        // by making service classes and locating them with DI/IoC.
+
+        // See DepInject project for a sample of how to accomplish this.
+        if (Application.Current?.ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime desktop ||
+            desktop.MainWindow?.StorageProvider is not { } provider)
+            throw new NullReferenceException("Missing StorageProvider instance.");
+
+        var files = await provider.OpenFilePickerAsync(new FilePickerOpenOptions()
+        {
+            Title = "Open Text File",
+            AllowMultiple = false
+        });
+
+        return files?.Count >= 1 ? files[0] : null;
+    }
+
+    private async Task<IStorageFile?> DoSaveFilePicker()
+    {
+        // For learning purposes, we opted to directly get the reference
+        // for StorageProvider APIs here inside the ViewModel. 
+
+        // For your real-world apps, you should follow the MVVM principles
+        // by making service classes and locating them with DI/IoC.
+
+        // See DepInject project for a sample of how to accomplish this.
+        if (Application.Current?.ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime desktop ||
+            desktop.MainWindow?.StorageProvider is not { } provider)
+            throw new NullReferenceException("Missing StorageProvider instance.");
+
+        return await provider.SaveFilePickerAsync(new FilePickerSaveOptions()
+        {
+            Title = "Save Text File"
+        });
     }
 }

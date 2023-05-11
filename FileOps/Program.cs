@@ -1,7 +1,7 @@
-﻿using Avalonia;
-using System;
+﻿using System;
+using Avalonia;
 
-namespace FileOpsExample;
+namespace FileOps;
 
 class Program
 {

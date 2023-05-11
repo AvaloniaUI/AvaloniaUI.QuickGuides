@@ -1,19 +1,24 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:FileOpsExample.ViewModels"
+        xmlns:vm="using:FileOps.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:FileOps.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="FileOpsExample.Views.MainWindow"
-        x:DataType="vm:MainWindowViewModel"
+        x:Class="FileOps.Views.MainWindow"
+        x:DataType="viewModels:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="FileOps">
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
     <DockPanel LastChildFill="True">
-        <DockPanel DockPanel.Dock="Bottom">
-            <Button DockPanel.Dock="Left" Command="{Binding OpenFileCommand}">Open File</Button>
-            <Button DockPanel.Dock="Right" Command="{Binding SaveFileCommand}">Save File</Button>
-            <TextBox Text="{Binding FileUri}" Watermark="File Path" />
-        </DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <Button Command="{Binding OpenFileCommand}">Open File</Button>
+            <Button Command="{Binding SaveFileCommand}">Save File</Button>
+        </StackPanel>
         <ListBox DockPanel.Dock="Bottom" ItemsSource="{Binding ErrorMessages}"/>
         <TextBox Text="{Binding FileText, Mode=TwoWay}" 
                  AcceptsReturn="True" 

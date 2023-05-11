@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace FileOpsExample.ViewModels;
+namespace FileOps.ViewModels;
 
 public partial class ViewModelBase : ObservableObject
 {
