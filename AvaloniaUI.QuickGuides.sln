@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingsAndConverters", "Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOps", "FileOps\FileOps.csproj", "{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCFileOps", "IoCFileOps\IoCFileOps.csproj", "{BD1BAF99-1AD6-4DEB-B130-69120C9C9D92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1BAF99-1AD6-4DEB-B130-69120C9C9D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1BAF99-1AD6-4DEB-B130-69120C9C9D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1BAF99-1AD6-4DEB-B130-69120C9C9D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1BAF99-1AD6-4DEB-B130-69120C9C9D92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

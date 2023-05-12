@@ -13,7 +13,6 @@ namespace FileOps.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    [ObservableProperty] private string? _fileUri;
     [ObservableProperty] private string? _fileText;
 
     [RelayCommand]
@@ -78,7 +77,7 @@ public partial class MainWindowViewModel : ViewModelBase
         // For your real-world apps, you should follow the MVVM principles
         // by making service classes and locating them with DI/IoC.
 
-        // See DepInject project for a sample of how to accomplish this.
+        // See IoCFileOps project for an example of how to accomplish this.
         if (Application.Current?.ApplicationLifetime is not IClassicDesktopStyleApplicationLifetime desktop ||
             desktop.MainWindow?.StorageProvider is not { } provider)
             throw new NullReferenceException("Missing StorageProvider instance.");
