@@ -23,7 +23,7 @@ public partial class MainWindowViewModel : ViewModelBase
             var filesService = App.Current?.Services?.GetService<IFilesService>();
             if (filesService is null) throw new NullReferenceException("Missing File Service instance.");
 
-            var file = await filesService.OpenFile();
+            var file = await filesService.OpenFileAsync();
             if (file is null) return;
 
             // Limit the text file to 1MB so that the demo wont lag.
@@ -53,7 +53,7 @@ public partial class MainWindowViewModel : ViewModelBase
             var filesService = App.Current?.Services?.GetService<IFilesService>();
             if (filesService is null) throw new NullReferenceException("Missing File Service instance.");
 
-            var file = await filesService.SaveFile();
+            var file = await filesService.SaveFileAsync();
             if (file is null) return;
 
 

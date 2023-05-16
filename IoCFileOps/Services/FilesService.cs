@@ -13,7 +13,7 @@ public class FilesService : IFilesService
         _target = target;
     }
 
-    public async Task<IStorageFile?> OpenFile()
+    public async Task<IStorageFile?> OpenFileAsync()
     {
         var files = await _target.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions()
         {
@@ -24,7 +24,7 @@ public class FilesService : IFilesService
         return files.Count >= 1 ? files[0] : null;
     }
 
-    public async Task<IStorageFile?> SaveFile()
+    public async Task<IStorageFile?> SaveFileAsync()
     {
         return await _target.StorageProvider.SaveFilePickerAsync(new FilePickerSaveOptions()
         {

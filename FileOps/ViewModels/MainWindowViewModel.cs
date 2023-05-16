@@ -21,7 +21,7 @@ public partial class MainWindowViewModel : ViewModelBase
         ErrorMessages?.Clear();
         try
         {
-            var file = await DoOpenFilePicker();
+            var file = await DoOpenFilePickerAsync();
             if (file is null) return;
 
             // Limit the text file to 1MB so that the demo won't lag.
@@ -48,13 +48,13 @@ public partial class MainWindowViewModel : ViewModelBase
         ErrorMessages?.Clear();
         try
         {
-            var file = await DoSaveFilePicker();
+            var file = await DoSaveFilePickerAsync();
             if (file is null) return;
 
             // Limit the text file to 1MB so that the demo won't lag.
             if (FileText?.Length <= 1024 * 1024 * 1)
             {
-                var stream = new MemoryStream(Encoding.Default.GetBytes((string)FileText));
+                var stream = new MemoryStream(Encoding.Default.GetBytes(FileText));
                 await using var writeStream = await file.OpenWriteAsync();
                 await stream.CopyToAsync(writeStream);
             }
@@ -69,7 +69,7 @@ public partial class MainWindowViewModel : ViewModelBase
         }
     }
 
-    private async Task<IStorageFile?> DoOpenFilePicker()
+    private async Task<IStorageFile?> DoOpenFilePickerAsync()
     {
         // For learning purposes, we opted to directly get the reference
         // for StorageProvider APIs here inside the ViewModel. 
@@ -91,7 +91,7 @@ public partial class MainWindowViewModel : ViewModelBase
         return files?.Count >= 1 ? files[0] : null;
     }
 
-    private async Task<IStorageFile?> DoSaveFilePicker()
+    private async Task<IStorageFile?> DoSaveFilePickerAsync()
     {
         // For learning purposes, we opted to directly get the reference
         // for StorageProvider APIs here inside the ViewModel. 
