@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace FileOps.Views;
+namespace ClipboardOps.Views;
 
 public partial class MainWindow : Window
 {

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCFileOps", "IoCFileOps\Io
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipboardOps", "ClipboardOps\ClipboardOps.csproj", "{4D84B4F6-C01E-4D89-A6B6-2E78BF343A57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragDropOps", "DragDropOps\DragDropOps.csproj", "{8874A12A-559C-4383-90BE-76D83022E29D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{4D84B4F6-C01E-4D89-A6B6-2E78BF343A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D84B4F6-C01E-4D89-A6B6-2E78BF343A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D84B4F6-C01E-4D89-A6B6-2E78BF343A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8874A12A-559C-4383-90BE-76D83022E29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8874A12A-559C-4383-90BE-76D83022E29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8874A12A-559C-4383-90BE-76D83022E29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8874A12A-559C-4383-90BE-76D83022E29D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

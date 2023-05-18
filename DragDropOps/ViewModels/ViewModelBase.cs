@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace ClipboardOps.ViewModels;
+namespace DragDropOps.ViewModels;
 
 public partial class ViewModelBase : ObservableObject
 {

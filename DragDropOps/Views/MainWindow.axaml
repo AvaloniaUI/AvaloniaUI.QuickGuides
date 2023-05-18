@@ -1,0 +1,65 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:DragDropOps.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:DragDropOps.ViewModels"
+        xmlns:viewModels1="clr-namespace:DragDropOps.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DragDropOps.Views.MainWindow"
+        x:DataType="viewModels1:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="DragDropOps">
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <viewModels1:MainWindowViewModel />
+    </Design.DataContext>
+    <Panel>
+
+        <WrapPanel HorizontalAlignment="Center">
+            <StackPanel Margin="8"
+                        MaxWidth="160">
+                <Border Name="DragMeText"
+                        Padding="16"
+                        BorderBrush="{DynamicResource SystemAccentColor}"
+                        BorderThickness="2">
+                    <TextBlock Name="DragStateText" TextWrapping="Wrap">Drag Me (text)</TextBlock>
+                </Border>
+                <Border Name="DragMeFiles"
+                        Padding="16"
+                        BorderBrush="{DynamicResource SystemAccentColor}"
+                        BorderThickness="2">
+                    <TextBlock Name="DragStateFiles" TextWrapping="Wrap">Drag Me (files)</TextBlock>
+                </Border>
+                <Border Name="DragMeCustom"
+                        Padding="16"
+                        BorderBrush="{DynamicResource SystemAccentColor}"
+                        BorderThickness="2">
+                    <TextBlock Name="DragStateCustom" TextWrapping="Wrap">Drag Me (custom)</TextBlock>
+                </Border>
+            </StackPanel>
+
+            <StackPanel Margin="8"
+                        Orientation="Horizontal"
+                        Spacing="16">
+                <Border Name="CopyTarget"
+                        Padding="16"
+                        MaxWidth="260"
+                        Background="{DynamicResource SystemAccentColorDark1}"
+                        DragDrop.AllowDrop="True">
+                    <TextBlock TextWrapping="Wrap">Drop some text or files here (Copy)</TextBlock>
+                </Border>
+                <Border Name="MoveTarget"
+                        Padding="16"
+                        MaxWidth="260"
+                        Background="{DynamicResource SystemAccentColorDark1}"
+                        DragDrop.AllowDrop="True">
+                    <TextBlock TextWrapping="Wrap">Drop some text or files here (Move)</TextBlock>
+                </Border>
+            </StackPanel>
+        </WrapPanel>
+
+        <TextBlock x:Name="DropState" TextWrapping="Wrap" />
+    </Panel>
+</Window>

@@ -6,7 +6,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-namespace ClipboardOps.ViewModels;
+namespace DragDropOps.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {

@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using ClipboardOps.ViewModels;
-using ClipboardOps.Views;
+using DragDropOps.ViewModels;
+using DragDropOps.Views;
 
-namespace ClipboardOps;
+namespace DragDropOps;
 
 public partial class App : Application
 {

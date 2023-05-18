@@ -1,7 +1,7 @@
 ﻿using System;
 using Avalonia;
 
-namespace ClipboardOps;
+namespace DragDropOps;
 
 class Program
 {
