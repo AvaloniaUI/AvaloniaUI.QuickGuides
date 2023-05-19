@@ -9,40 +9,21 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <AvaloniaResource Include="Assets\**" />
+        <AvaloniaResource Include="Assets\**"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectCapability Include="Avalonia" />
-        <TrimmerRootAssembly Include="Avalonia.Themes.Fluent" />
+        <ProjectCapability Include="Avalonia"/>
+        <TrimmerRootAssembly Include="Avalonia.Themes.Fluent"/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.0.0-preview8" />
-        <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview8" />
-        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0-preview8" />
-        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.0-preview8" />
+        <PackageReference Include="Avalonia" Version="11.0.0-preview8"/>
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview8"/>
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0-preview8"/>
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.0-preview8"/>
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.0-preview8" />
-        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-Black.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-BlackItalic.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-Bold.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-BoldItalic.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-ExtraBold.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-ExtraBoldItalic.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-ExtraLight.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-ExtraLightItalic.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-Italic.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-Light.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-LightItalic.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-Medium.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-MediumItalic.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-Regular.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-SemiBold.ttf" />
-      <UpToDateCheckInput Remove="Assets\Fonts\Nunito-SemiBoldItalic.ttf" />
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.0-preview8"/>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0"/>
     </ItemGroup>
 </Project>
