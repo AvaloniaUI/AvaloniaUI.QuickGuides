@@ -27,7 +27,7 @@ public partial class SplashWindow : Window
 
     private async void DummyLoad()
     {
-        // Do some background stuff here i guess?
+        // Do some background stuff here.
         await Task.Delay(3000);
 
         await Dispatcher.UIThread.InvokeAsync(() =>

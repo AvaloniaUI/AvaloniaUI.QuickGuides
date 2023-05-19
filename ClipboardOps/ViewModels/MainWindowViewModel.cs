@@ -12,9 +12,7 @@ public partial class MainWindowViewModel : ViewModelBase
 {
     [ObservableProperty] private string? _text = "Avalonia is a cross-platform UI framework for dotnet, providing a" +
                                                  " flexible styling system and supporting a wide range of platforms" +
-                                                 " such as Windows, macOS, Linux, iOS, Android and WebAssembly. " +
-                                                 "Avalonia is mature and production ready and is used by companies, " +
-                                                 "including Schneider Electric, Unity, JetBrains and Github.";
+                                                 " such as Windows, macOS, Linux, iOS, Android and WebAssembly. ";
 
 
     [ObservableProperty] private int _caretIndex;
