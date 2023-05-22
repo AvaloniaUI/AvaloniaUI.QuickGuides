@@ -6,7 +6,7 @@
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-        <RootNamespace>DataListExample</RootNamespace>
+        <RootNamespace>MakingLists</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

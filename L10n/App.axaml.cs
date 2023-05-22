@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using MakingLists.ViewModels;
-using MakingLists.Views;
+using L10n.ViewModels;
+using L10n.Views;
 
-namespace MakingLists;
+namespace L10n;
 
 public partial class App : Application
 {

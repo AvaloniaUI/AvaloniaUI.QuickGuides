@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.Input;
 
-namespace DataListExample.ViewModels;
+namespace MakingLists.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {

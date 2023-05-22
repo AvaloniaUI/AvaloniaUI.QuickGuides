@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace MakingLists;
+namespace L10n;
 
 class Program
 {

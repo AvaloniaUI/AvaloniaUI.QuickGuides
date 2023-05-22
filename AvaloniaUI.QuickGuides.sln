@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragDropOps", "DragDropOps\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplashScreen", "SplashScreen\SplashScreen.csproj", "{87AD03B7-7172-4EE1-8ED1-83627A64923E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L10n", "L10n\L10n.csproj", "{51EE0634-8AD0-4870-815F-B34079982A62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{87AD03B7-7172-4EE1-8ED1-83627A64923E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87AD03B7-7172-4EE1-8ED1-83627A64923E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87AD03B7-7172-4EE1-8ED1-83627A64923E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EE0634-8AD0-4870-815F-B34079982A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EE0634-8AD0-4870-815F-B34079982A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EE0634-8AD0-4870-815F-B34079982A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EE0634-8AD0-4870-815F-B34079982A62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
