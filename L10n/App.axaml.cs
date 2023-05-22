@@ -16,7 +16,7 @@ public partial class App : Application
 
     public override void OnFrameworkInitializationCompleted()
     {
-        Assets.Resources.Culture = new CultureInfo("ja-JP");
+        Assets.Resources.Culture = new CultureInfo("fil-PH");
 
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
