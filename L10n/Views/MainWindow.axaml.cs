@@ -8,6 +8,5 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        L10n.Resources.Culture = new CultureInfo("tl-PH");
     }
 }

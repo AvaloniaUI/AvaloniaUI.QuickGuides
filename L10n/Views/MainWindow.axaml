@@ -3,7 +3,7 @@
         xmlns:vm="using:L10n.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:L10n="clr-namespace:L10n"
+        xmlns:assets="clr-namespace:L10n.Assets"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="L10n.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -16,6 +16,6 @@
         <vm:MainWindowViewModel />
     </Design.DataContext>
     <Panel>
-        <TextBlock Text="{x:Static L10n:Resources.TestText1}"/>
+        <TextBlock Text="{x:Static assets:Resources.TestText}"/>
     </Panel>
 </Window>
