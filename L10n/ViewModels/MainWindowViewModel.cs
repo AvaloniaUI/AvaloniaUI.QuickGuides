@@ -8,10 +8,7 @@ namespace L10n.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    [ObservableProperty] private string _greeting;
-
     public MainWindowViewModel()
-    {
-        Greeting = L10n.Resources.TestText1;
+    { 
     }
 }
