@@ -47,7 +47,7 @@ namespace L10n.Assets {
         
         public static string GreetingText {
             get {
-                return ResourceManager.GetString("GreetingText", resourceCulture);
+                return ResourceManager.GetString("GreetingText", resourceCulture); 
             }
         }
     }
