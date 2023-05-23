@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace L10n;
+namespace Localization;
 
 class Program
 {

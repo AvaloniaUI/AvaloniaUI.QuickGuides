@@ -2,10 +2,10 @@ using System.Globalization;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using L10n.ViewModels;
-using L10n.Views;
+using Localization.ViewModels;
+using Localization.Views;
 
-namespace L10n;
+namespace Localization;
 
 public partial class App : Application
 {
