@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porting10", "Porting10\Port
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porting11", "Porting11\Porting11.csproj", "{E62EEA1B-C820-4155-BA60-206910B0C9C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControl", "CustomControl\CustomControl.csproj", "{FA78C1BD-DAC4-43EB-B0C8-B7F41F8FBB2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{E62EEA1B-C820-4155-BA60-206910B0C9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E62EEA1B-C820-4155-BA60-206910B0C9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E62EEA1B-C820-4155-BA60-206910B0C9C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA78C1BD-DAC4-43EB-B0C8-B7F41F8FBB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA78C1BD-DAC4-43EB-B0C8-B7F41F8FBB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA78C1BD-DAC4-43EB-B0C8-B7F41F8FBB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA78C1BD-DAC4-43EB-B0C8-B7F41F8FBB2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
