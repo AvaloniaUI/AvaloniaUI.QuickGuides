@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace CustomControl;
+namespace NativeMenuOps;
 
 class Program
 {

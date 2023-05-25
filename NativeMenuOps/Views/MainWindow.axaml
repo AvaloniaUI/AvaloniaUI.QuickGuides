@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:NativeMenuOps.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="NativeMenuOps.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="NativeMenuOps">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+    
+    <NativeMenu.Menu>
+        <NativeMenu>
+            <NativeMenuItem Header="Example">
+                <NativeMenu>
+                    <NativeMenuItem Header="Toggle Option 1" ToggleType="Radio" IsChecked="True"/>
+                    <NativeMenuItem Header="Toggle Option 2" ToggleType="Radio" IsChecked="False" />
+                    <NativeMenuItemSeparator />
+                    <NativeMenuItem Header="CheckBox Option" ToggleType="CheckBox" IsChecked="True" />
+                    <NativeMenuItem Icon="/Assets/avalonia-logo.ico" Header="Option with Icon" />
+                    <NativeMenuItem Header="Disabled option" IsEnabled="False" />
+                </NativeMenu>
+            </NativeMenuItem>
+        </NativeMenu>
+    </NativeMenu.Menu>
+
+    <DockPanel Margin="10">
+        <TextBlock DockPanel.Dock="Top">There shouldn't be any menu below this text if the system supports native app menu.</TextBlock>
+        <NativeMenuBar VerticalAlignment="Top" />
+    </DockPanel>
+
+</Window>

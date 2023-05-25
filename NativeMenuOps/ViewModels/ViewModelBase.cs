@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace CustomControl.ViewModels;
+namespace NativeMenuOps.ViewModels;
 
 public class ViewModelBase : ObservableObject
 {
