@@ -111,7 +111,7 @@
 
     <WrapPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button>Normal Button</Button>
-        <Button Classes="Style1">Style selector Button</Button>
-        <Button Theme="{StaticResource WinClassicButtonTheme}">Windows Classic Button</Button>
+        <Button Classes="Style1">Styled Button</Button>
+        <Button Theme="{StaticResource WinClassicButtonTheme}">ControlTheme Button</Button>
     </WrapPanel>
 </Window>
