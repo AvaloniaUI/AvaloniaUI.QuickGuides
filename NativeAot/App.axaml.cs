@@ -1,10 +1,10 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using NativeAOT.ViewModels;
-using NativeAOT.Views;
+using NativeAot.ViewModels;
+using NativeAot.Views;
 
-namespace NativeAOT;
+namespace NativeAot;
 
 public partial class App : Application
 {

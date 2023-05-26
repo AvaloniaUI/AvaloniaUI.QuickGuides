@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace NativeAOT.Views;
+namespace NativeAot.Views;
 
 public partial class MainWindow : Window
 {

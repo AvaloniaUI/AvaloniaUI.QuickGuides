@@ -6,6 +6,9 @@
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <!-- Yes, this is the only thing you need to add to enable NativeAOT -->
+    <!-- To actually compile/publish, just run `dotnet publish -c Release -r <runtime_id_here>` -->
+    <PublishAot>true</PublishAot>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +24,6 @@
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.0-preview8" />
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.0-preview8" />
-    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0-preview8" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
   </ItemGroup>
 </Project>
