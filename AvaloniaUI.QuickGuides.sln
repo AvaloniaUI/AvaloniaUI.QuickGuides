@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControl", "CustomCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeMenuOps", "NativeMenuOps\NativeMenuOps.csproj", "{268CC518-4F15-4E38-8684-81EFA0CD2196}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonCustomize", "ButtonCustomize\ButtonCustomize.csproj", "{A01C8E1E-57CC-4728-966D-C1CA54E6F198}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,5 +98,9 @@ Global
 		{268CC518-4F15-4E38-8684-81EFA0CD2196}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{268CC518-4F15-4E38-8684-81EFA0CD2196}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{268CC518-4F15-4E38-8684-81EFA0CD2196}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A01C8E1E-57CC-4728-966D-C1CA54E6F198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01C8E1E-57CC-4728-966D-C1CA54E6F198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01C8E1E-57CC-4728-966D-C1CA54E6F198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01C8E1E-57CC-4728-966D-C1CA54E6F198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
