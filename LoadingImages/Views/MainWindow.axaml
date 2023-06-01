@@ -14,7 +14,7 @@
         <vm:MainWindowViewModel />
     </Design.DataContext>
 
-    <Grid ColumnDefinitions="*,*,*">
+    <Grid ColumnDefinitions="*,*,*" RenderOptions.BitmapInterpolationMode="HighQuality">
         <Image Grid.Column="0" Source="avares://LoadingImages/Assets/abstract.jpg" MaxWidth="300" />
         <Image Grid.Column="1" Source="{Binding ImageFromBinding}" MaxWidth="300" />
         <Image Grid.Column="2" Source="{Binding ImageFromWebsite^}" MaxWidth="300" />
