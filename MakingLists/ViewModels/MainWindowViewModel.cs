@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.Input;
 
@@ -16,6 +17,13 @@ public partial class MainWindowViewModel : ViewModelBase
         {
             Numbers.Add($"{Random.Shared.Next(0, 100)}");
         }
+        Numbers.CollectionChanged += (sender, args) =>
+        {
+            if (args.Action is NotifyCollectionChangedAction.Add or NotifyCollectionChangedAction.Remove)
+            {
+                DeleteRandomNumberToListCommand.NotifyCanExecuteChanged();
+            }
+        };
     }
 
     [RelayCommand]
