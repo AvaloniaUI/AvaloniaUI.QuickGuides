@@ -3,45 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingImages", "LoadingImages\LoadingImages.csproj", "{1829A943-9C42-4F3F-B189-5C378F0FB8C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadingImages", "LoadingImages\LoadingImages.csproj", "{1829A943-9C42-4F3F-B189-5C378F0FB8C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleFonts", "GoogleFonts\GoogleFonts.csproj", "{C089C4DB-60EE-4079-88E8-E4E92F156FDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoogleFonts", "GoogleFonts\GoogleFonts.csproj", "{C089C4DB-60EE-4079-88E8-E4E92F156FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakingLists", "MakingLists\MakingLists.csproj", "{5FA54F40-2388-42C6-AAF4-303E046CAC3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakingLists", "MakingLists\MakingLists.csproj", "{5FA54F40-2388-42C6-AAF4-303E046CAC3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingsAndConverters", "BindingsAndConverters\BindingsAndConverters.csproj", "{6622FB60-2ABB-486D-AE0F-74ADE325248C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindingsAndConverters", "BindingsAndConverters\BindingsAndConverters.csproj", "{6622FB60-2ABB-486D-AE0F-74ADE325248C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOps", "FileOps\FileOps.csproj", "{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileOps", "FileOps\FileOps.csproj", "{BAC99FFA-3A57-49BE-AFCA-410F029CC8C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCFileOps", "IoCFileOps\IoCFileOps.csproj", "{BD1BAF99-1AD6-4DEB-B130-69120C9C9D92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoCFileOps", "IoCFileOps\IoCFileOps.csproj", "{BD1BAF99-1AD6-4DEB-B130-69120C9C9D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipboardOps", "ClipboardOps\ClipboardOps.csproj", "{4D84B4F6-C01E-4D89-A6B6-2E78BF343A57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClipboardOps", "ClipboardOps\ClipboardOps.csproj", "{4D84B4F6-C01E-4D89-A6B6-2E78BF343A57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragDropOps", "DragDropOps\DragDropOps.csproj", "{8874A12A-559C-4383-90BE-76D83022E29D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DragDropOps", "DragDropOps\DragDropOps.csproj", "{8874A12A-559C-4383-90BE-76D83022E29D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplashScreen", "SplashScreen\SplashScreen.csproj", "{87AD03B7-7172-4EE1-8ED1-83627A64923E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SplashScreen", "SplashScreen\SplashScreen.csproj", "{87AD03B7-7172-4EE1-8ED1-83627A64923E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localization", "Localization\Localization.csproj", "{51EE0634-8AD0-4870-815F-B34079982A62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Localization", "Localization\Localization.csproj", "{51EE0634-8AD0-4870-815F-B34079982A62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porting10", "Porting10\Porting10.csproj", "{B4A6FC0A-E932-4192-B442-85BCE5CE8E95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Porting11", "Porting11\Porting11.csproj", "{E62EEA1B-C820-4155-BA60-206910B0C9C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porting11", "Porting11\Porting11.csproj", "{E62EEA1B-C820-4155-BA60-206910B0C9C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomControl", "CustomControl\CustomControl.csproj", "{FA78C1BD-DAC4-43EB-B0C8-B7F41F8FBB2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControl", "CustomControl\CustomControl.csproj", "{FA78C1BD-DAC4-43EB-B0C8-B7F41F8FBB2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativeMenuOps", "NativeMenuOps\NativeMenuOps.csproj", "{268CC518-4F15-4E38-8684-81EFA0CD2196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeMenuOps", "NativeMenuOps\NativeMenuOps.csproj", "{268CC518-4F15-4E38-8684-81EFA0CD2196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ButtonCustomize", "ButtonCustomize\ButtonCustomize.csproj", "{A01C8E1E-57CC-4728-966D-C1CA54E6F198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonCustomize", "ButtonCustomize\ButtonCustomize.csproj", "{A01C8E1E-57CC-4728-966D-C1CA54E6F198}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeAot", "NativeAot\NativeAot.csproj", "{1E3495B7-372B-4846-B461-84CE89DFE3F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativeAot", "NativeAot\NativeAot.csproj", "{1E3495B7-372B-4846-B461-84CE89DFE3F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1829A943-9C42-4F3F-B189-5C378F0FB8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -84,10 +79,6 @@ Global
 		{51EE0634-8AD0-4870-815F-B34079982A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51EE0634-8AD0-4870-815F-B34079982A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51EE0634-8AD0-4870-815F-B34079982A62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B4A6FC0A-E932-4192-B442-85BCE5CE8E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4A6FC0A-E932-4192-B442-85BCE5CE8E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4A6FC0A-E932-4192-B442-85BCE5CE8E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4A6FC0A-E932-4192-B442-85BCE5CE8E95}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E62EEA1B-C820-4155-BA60-206910B0C9C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E62EEA1B-C820-4155-BA60-206910B0C9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E62EEA1B-C820-4155-BA60-206910B0C9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -108,5 +99,8 @@ Global
 		{1E3495B7-372B-4846-B461-84CE89DFE3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E3495B7-372B-4846-B461-84CE89DFE3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E3495B7-372B-4846-B461-84CE89DFE3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
