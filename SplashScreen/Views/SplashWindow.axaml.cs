@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using System.Timers;
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 using Avalonia.Threading;
 
 namespace SplashScreen.Views;
@@ -20,11 +21,11 @@ public partial class SplashWindow : Window
         _mainAction = mainAction;
     }
 
-    protected override void OnLoaded()
+    protected override void OnLoaded(RoutedEventArgs e)
     {
         DummyLoad();
     }
-
+    
     private async void DummyLoad()
     {
         // Do some background stuff here.
