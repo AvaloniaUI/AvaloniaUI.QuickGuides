@@ -1,0 +1,72 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:GroupBox.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="600" Height="400"
+        x:Class="GroupBox.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Padding="25"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="GroupBox Demo App">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Window.Styles>
+        <Style Selector="HeaderedContentControl">
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+        
+                        <!-- Header -->
+                        <Border 
+                            ZIndex="1" 
+                            Background="{DynamicResource SystemControlBackgroundAltHighBrush}" 
+                            Padding="5,0,5,0" 
+                            Margin="5,0,0,0">
+                            <TextBlock 
+                                Text="{TemplateBinding Header}" 
+                                FontWeight="Bold"/>
+                        </Border>
+        
+                        <!-- Content Area -->
+                        <Border 
+                            Grid.RowSpan="2" 
+                            Padding="0,5,0,0"
+                            Grid.ColumnSpan="2"
+                            CornerRadius="4"
+                            Margin="0,10,0,0"
+                            BorderBrush="{DynamicResource SystemControlForegroundBaseMediumBrush}"
+                            BorderThickness="1">
+                            <ContentPresenter 
+                                Name="PART_ContentPresenter"
+                                Padding="8"
+                                Content="{TemplateBinding Content}"/>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter>
+        </Style>
+    </Window.Styles>
+    
+    <HeaderedContentControl Header="Settings">
+        <StackPanel Spacing="8">
+            <TextBox Text="Sample content"/>
+            <Button Content="Click me"/>
+        </StackPanel>
+    </HeaderedContentControl>
+
+</Window>

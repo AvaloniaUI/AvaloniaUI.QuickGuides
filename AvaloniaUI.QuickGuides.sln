@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonCustomize", "ButtonCu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeAot", "NativeAot\NativeAot.csproj", "{1E3495B7-372B-4846-B461-84CE89DFE3F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBox", "GroupBox\GroupBox.csproj", "{F6022484-FCCF-4DD7-8366-10BB3382C531}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{1E3495B7-372B-4846-B461-84CE89DFE3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E3495B7-372B-4846-B461-84CE89DFE3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E3495B7-372B-4846-B461-84CE89DFE3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6022484-FCCF-4DD7-8366-10BB3382C531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6022484-FCCF-4DD7-8366-10BB3382C531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6022484-FCCF-4DD7-8366-10BB3382C531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6022484-FCCF-4DD7-8366-10BB3382C531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
