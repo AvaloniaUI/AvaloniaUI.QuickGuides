@@ -17,7 +17,7 @@ public class BirthdateToAgeConverter : IValueConverter
 
         var diff = DateTimeOffset.Now - ageDto;
         
-        var age = (int)Math.Round(diff.TotalDays / 365);
+        var age = (int)Math.Floor(diff.TotalDays / 365);
 
         return age >= 0 ? age : 0;
     }
